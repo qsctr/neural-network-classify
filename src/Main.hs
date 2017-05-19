@@ -165,6 +165,6 @@ logState State {..} = do
     where
     values =
         [ printf "%.8f" err
-        , show hidden
+        , printf "%2d" hidden
         , printf "%.1f" rate
         , if running then "Running" else "Stopped" ]
